@@ -11,6 +11,14 @@ Prerequisites
 * Raspberry Pi Model A or B
 * Python 2.7
 
+dependencies
+==============
+
+* apt-get install librrd-dev libpython3-dev
+* pip install setuptools
+* pip3 install rrdtool
+
+
 hmc5883\_gas\_counter.py
 ========================
 
