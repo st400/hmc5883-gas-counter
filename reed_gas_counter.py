@@ -1,8 +1,8 @@
 #!/usr/bin/python -u
 #
-# hmc5883_gas_counter.py
+# reed_gas_counter.py
 #
-# Program to read the gas counter value by using the digital magnetometer HMC5883
+# Program to read the gas counter value by using a reed contact
 
 # Copyright 2014 Martin Kompf
 #
