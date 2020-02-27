@@ -1,4 +1,4 @@
-hmc5883-gas-counter
+reed-gas-counter
 ====================
 
 Program to monitor the consumption of gas used for heating in a household .
@@ -19,14 +19,13 @@ dependencies
 * pip3 install rrdtool
 
 
-hmc5883\_gas\_counter.py
+reed\_gas\_counter.py
 ========================
 
 ![Gas counter with magnetometer HMC5883 breakout](http://www.kompf.de/tech/images/countmag_m.jpg)
 
-This program uses the 3 axis magnetometer HMC5883 to read the magnetic induction which is produced by a gas counter. The gas counter contains a small magnet that is attached to a rotating counter ring. Each rotation of the counter ring means a consumption of 0.01 m³ gas. The magnetic induction produced by the rotating magnet is read with the magnetometer that is connected to the I²C bus of a Raspberry Pi.
+This program uses a reed contact connected to one of the GPIO pins of a Raspberry to log the revolutions of a gas meter.
 
-The program monitors that magnetic induction and every time it detects a rotation of the magnet it writes the actual counter and consumption values into a round robin database. 
 
 *Help:* 
 
